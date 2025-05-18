@@ -1,0 +1,62 @@
+{
+  "default": {
+    "pretrained_model": "chemical_system_energy_above_hull",
+    "batch_size": 8,
+    "guidance_scale": 1.0,
+    "record_trajectories": false
+  },
+  "chemical_systems": [
+    {
+      "name": "Li-P-S",
+      "description": "硫化物体系，如Li3PS4等，已知有较高的锂离子导电率",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-Si-S",
+      "description": "硅硫化物体系，如Li4SiS4等，具有较好的电化学稳定性",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-Ge-S",
+      "description": "锗硫化物体系，如Li4GeS4等，可能具有高离子导电率",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-B-S",
+      "description": "硼硫化物体系，如Li3BS3等，新型锂离子导体候选体系",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-P-O",
+      "description": "磷酸盐体系，如Li3PO4等，具有良好的电化学稳定性",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-La-Zr-O",
+      "description": "石榴石型氧化物导体，如LLZO等，已知性能优异",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-S-Cl",
+      "description": "硫氯化物体系，新型混合阴离子超导体候选体系",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-S-I",
+      "description": "硫碘化物体系，新型混合阴离子超导体候选体系",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    }
+  ],
+  "batch_generation": {
+    "max_workers": 1,
+    "output_base_dir": "data/generated"
+  }
+} 
