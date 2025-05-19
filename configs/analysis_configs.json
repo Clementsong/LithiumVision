@@ -1,0 +1,39 @@
+{
+  "default": {
+    "mp_api_key": "7cXC8xULfZusdoLODDA",
+    "max_workers": 4,
+    "structure_matcher": false,
+    "e_hull_threshold": 0.1
+  },
+  "filtering": {
+    "e_hull_max": 0.1,
+    "only_novel": false,
+    "only_containing_li": true,
+    "score_weights": {
+      "stability": 1.0
+    }
+  },
+  "visualization": {
+    "top_candidates": 10,
+    "format": "png",
+    "dpi": 300
+  },
+  "novelty_criteria": {
+    "formula_matching": true,
+    "structure_matching": false,
+    "similarity_threshold": 0.9
+  },
+  "stability_scoring": {
+    "ranges": [
+      {"max": 0.01, "score": 100},
+      {"max": 0.05, "score": 80},
+      {"max": 0.1, "score": 50},
+      {"max": 0.2, "score": 20},
+      {"max": null, "score": 0}
+    ]
+  },
+  "batch_analysis": {
+    "auto_analyze_after_generation": true,
+    "auto_filter_after_analysis": true
+  }
+} 

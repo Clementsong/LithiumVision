@@ -1,0 +1,63 @@
+{
+  "default": {
+    "pretrained_model": "chemical_system_energy_above_hull",
+    "batch_size": 8,
+    "guidance_scale": 1.0,
+    "record_trajectories": false,
+    "mattergen_repo_path":  "D:/学习相关文档/大二下/人工智能与流程工业导论/大作业/LithiumVision/mattergen/mattergen"
+  },
+  "chemical_systems": [
+    {
+      "name": "Li-P-S",
+      "description": "Sulfide system, e.g., Li3PS4, known for high Li-ion conductivity",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-Si-S",
+      "description": "Silicon sulfide system, e.g., Li4SiS4, good electrochemical stability",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-Ge-S",
+      "description": "Germanium sulfide system, e.g., Li4GeS4, potential for high ionic conductivity",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-B-S",
+      "description": "Boron sulfide system, e.g., Li3BS3, novel candidate system",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-P-O",
+      "description": "Phosphate system, e.g., Li3PO4, good electrochemical stability",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-La-Zr-O",
+      "description": "Garnet-type oxide conductor, e.g., LLZO, known for excellent performance",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-S-Cl",
+      "description": "Sulfide-chloride system, novel mixed-anion superconductor candidate",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    },
+    {
+      "name": "Li-S-I",
+      "description": "Sulfide-iodide system, novel mixed-anion superconductor candidate",
+      "e_hull_targets": [0.0, 0.05, 0.1],
+      "num_samples": 100
+    }
+  ],
+  "batch_generation": {
+    "max_workers_generation": 1,
+    "output_base_dir": "data/generated"
+  }
+}

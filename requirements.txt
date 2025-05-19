@@ -1,0 +1,40 @@
+# Base scientific computing
+numpy>=1.20.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# Plotting and Visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+plotly>=5.5.0 # For interactive plots, if used
+
+# Machine Learning (minimal, for potential future extensions)
+scikit-learn>=0.24.0
+
+# Materials Science
+pymatgen>=2023.0.0 # Ensure a recent version
+mp-api>=0.30.1    # Materials Project API client
+ase>=3.22.0       # Atomic Simulation Environment
+
+# MatterGen related (Core dependencies are handled by MatterGen's own setup)
+# These are here if scripts directly use them, or for environment consistency.
+# PyTorch should be installed according to your system (CPU/GPU CUDA version)
+# See MatterGen's documentation for specific PyTorch version requirements.
+# torch>=1.12.0
+# torchvision
+# torchaudio
+hydra-core>=1.1.0 # For MatterGen's configuration system
+e3nn>=0.5.0       # For equivariant neural networks (used by MatterGen)
+
+# Utility
+tqdm>=4.60.0  # Progress bars
+pyyaml>=6.0   # For YAML configuration (if used, e.g. by Hydra)
+
+# Jupyter Environment (if using notebooks)
+jupyterlab>=3.0.0
+ipython>=8.0.0
+ipywidgets>=7.7.0
+
+# Note: MatterGen itself should be installed separately,
+# typically by cloning its repository and running `pip install -e .` from within its directory.
+# Ensure its dependencies (like specific PyTorch versions) are met.
